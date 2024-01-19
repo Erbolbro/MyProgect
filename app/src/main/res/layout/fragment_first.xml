@@ -3,23 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.activity.fragments.FirstFragment">
 
     <ImageView
         android:layout_width="match_parent"
-        android:src="@drawable/bleach"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:layout_height="match_parent"/>
+        android:src="@drawable/bleach" />
 
-    <Button
-        android:id="@+id/btn_continue"
+    <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/red"
         android:layout_gravity="center"
-        android:text="@string/goTo"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="italic" />
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/red"
+        app:cornerRadius="10dp"
+        android:text="Данные о всех персонажах" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/red"
+        app:cornerRadius="10dp"
+        android:text="Смотреть аниме"
+        android:drawableEnd="@drawable/play_arrow"/>
+
+
 </FrameLayout>
